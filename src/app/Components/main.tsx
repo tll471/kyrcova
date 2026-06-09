@@ -1,5 +1,8 @@
 import { Card } from "./card"
+import { Choose } from "./choose"
 import { HeroImage } from "./heroImage"
+import { Timersell } from "./timersell"
+import { Upcoming } from "./upcoming"
 export function Main()
 {
     return(
@@ -12,6 +15,9 @@ export function Main()
                 <Card image="/pictures/3_pic.png" title="Prime Android" text="Expert Build | Age 16+"/>
             </div>
 
+            <Timersell></Timersell>
+            <Choose></Choose>
+            <Upcoming></Upcoming>
         </div>
     )
 }
