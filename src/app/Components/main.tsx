@@ -15,7 +15,7 @@ export function Main()
                 <Card image="/pictures/2_pic.png" title="Quad-Pod Hunter" text="Intermediate | Age 12+"/>
                 <Card image="/pictures/3_pic.png" title="Prime Android" text="Expert Build | Age 16+"/>
             </div>
-
+            
             <Timersell></Timersell>
             <Choose></Choose>
             <Upcoming></Upcoming>

@@ -38,7 +38,7 @@ export function Sets()
             <p className="text-[#6D28D9] font-inter font-bold text-[40px] leading-[100%] tracking-normal m-0">Why our sets?</p>
 
             <div className="flex flex-row items-center mt-15">
-                <img src="/pictures/right_black.png" alt="arrow" className="cursor-pointer" onClick={prev} />
+                <img src="/pictures/right_black.png" alt="arrow" className="mr-10" onClick={prev} />
 
                 <div className="bg-[#0D0519] w-[1090px] h-[317px] flex flex-row">
                     <img src={item.image} alt="image"/>
@@ -48,7 +48,7 @@ export function Sets()
                     </div>
                 </div>
 
-                <img src="/pictures/left_black.png" alt="arrow" className="cursor-pointer" onClick={next} />
+                <img src="/pictures/left_black.png" alt="arrow" className="ml-10" onClick={next} />
             </div>
         </div>
     )

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Navigation() {
   return (
     <div className="flex flex-row justify-center gap-5 bg-[#FACC15] fixed w-full h-[110px] items-center z-50">
@@ -5,10 +7,14 @@ export function Navigation() {
 
         <p>LOGO</p>
 
-        <div className="relative group">
-          <p>Category</p>
+        <div className="relative group py-5">
+          <div className="flex flex-row items-center">
+            <p>Category</p>
+            <img src='/pictures/down.png' className="w-[24px] h-[12px]"></img>
+          </div>
+          
 
-          <div className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-40 text-center gap-5">
+          <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-40 text-center gap-5">
             <p className="bg-[#FACC15] px-3 py-1">Мда</p>
             <p className="bg-[#FACC15] px-3 py-1">Мда</p>
             <p className="bg-[#FACC15] px-3 py-1">Мда</p>
@@ -16,10 +22,25 @@ export function Navigation() {
           </div>
         </div>
 
-        <p>About us</p>
-        <p>Help⬇</p>
+        <Link href="/about">About us</Link>
 
+          <div className="relative group py-5">
+            <div className="flex flex-row items-center">
+              <p>Help</p>
+              <img src="/pictures/down.png" className="w-[24px] h-[12px]" />
+            </div>
+
+            <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-120 text-center gap-5">
+              <p className="px-3 py-1">Find Assembly Instructions</p>
+              <p className="px-3 py-1">Frequently Asked Questions (FAQ)</p>
+              <p className="px-3 py-1">Contact Us</p>
+              <p className="px-3 py-1">Replacement Parts</p>
+            </div>
+          </div>
+        
       </div>
+      <input type="text" placeholder="Search..." className="w-[390px] h-[44px] px-4 rounded-[50px] border bg-white text-[18px] -ml-[190px]" />
+      <img src="/pictures/Search.png" alt="search" className="-ml-[70px]"/>
     </div>
   );
 }
