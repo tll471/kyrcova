@@ -2,7 +2,14 @@ export function HeroImage()
 {
     return(
         <div>
-            <img src="/pictures/hero_image.jpg" alt="picture" className="w-250 m-0 m-auto mt-10"/>
+            <img src="/pictures/heroimage.png" alt="picture" className="mt-[100px]"/>
+            <img src="/pictures/gradient.png" alt="picture" className="-mt-[963px]"/>
+
+            <p className="font-inter font-semibold text-[50px] leading-[100%] tracking-normal text-white -mt-[820px] ml-[100px] mb-[820px]">Your Bench.<br></br>ㅤYour Bots. <br></br>ㅤㅤYour Rules</p>
+            <div className="w-[390px] h-[70px] bg-[#FFFFFF] relative rounded-[35px] flex justify-around items-center -mt-[770px] ml-[120px] mb-[600px]">
+                <p className="font-inter font-normal text-[28px] leading-[100%] tracking-normal">Start Building</p>
+                <img src="/pictures/arrow_right.png" alt="arrow" />
+            </div>
         </div>
     )
 }

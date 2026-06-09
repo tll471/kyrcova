@@ -1,7 +1,7 @@
 export function Footer()
 {
     return(
-        <div className="bg-gray-500 w-full h-50 mt-auto">
+        <div className="bg-gray-500 w-full h-50 mt-50">
             <p>Footer</p>
         </div>
     )
