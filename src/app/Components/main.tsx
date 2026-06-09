@@ -1,6 +1,7 @@
 import { Card } from "./card"
 import { Choose } from "./choose"
 import { HeroImage } from "./heroImage"
+import { Sets } from "./sets"
 import { Timersell } from "./timersell"
 import { Upcoming } from "./upcoming"
 export function Main()
@@ -18,6 +19,7 @@ export function Main()
             <Timersell></Timersell>
             <Choose></Choose>
             <Upcoming></Upcoming>
+            <Sets></Sets>
         </div>
     )
 }
