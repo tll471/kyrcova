@@ -1,13 +1,14 @@
+import Link from "next/link";
 export function MainCards1() {
     const cards = [
-        { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250 },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245 },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245 },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245 },
-        { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250 },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245 },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245 },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245 },
+        { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250, links: '/Pages/robot1' },
+        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
+        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
+        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
+        { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250, links: '/Pages/robot1' },
+        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
+        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
+        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
     ];
 
     return (
@@ -56,17 +57,17 @@ export function MainCards1() {
                                 <p>{card.bricks}</p>
                             </div>
 
-                            <div className="mt-5 mx-auto bg-[#FACC15] w-[183px] h-[44px] rounded-[25.62px] flex items-center justify-center">Discover more</div>
+                            <Link href={card.links}><div className="mt-5 mx-auto bg-[#FACC15] w-[183px] h-[44px] rounded-[25.62px] flex items-center justify-center">Discover more</div></Link>
                         </div>
                     </div>
                 ))}
             </div>
-
+                    
             <div className="flex flex-row gap-5 m-0 m-auto mt-15">
                 <img src="/pictures/navleft.png" alt="pictures" />
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
+                <Link href = '/Pages/microBots' className="font-inter font-medium text-[25.59px] leading-none tracking-normal text-[#6D28D9]">1</Link>
+                <Link href = '/Pages/quadPod' className="font-inter font-medium text-[25.59px] leading-none tracking-normal">2</Link>
+                <Link href = '/Pages/primeAndroid' className="font-inter font-medium text-[25.59px] leading-none tracking-normal">3</Link>
                 <img src="/pictures/navright.png" alt="pictures" />
             </div>
         </div>

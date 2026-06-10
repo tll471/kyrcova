@@ -1,3 +1,4 @@
+import Link from "next/link";
 export function MainCards2() {
     const cards = [
         { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250 },
@@ -64,9 +65,9 @@ export function MainCards2() {
 
             <div className="flex flex-row gap-5 m-0 m-auto mt-15">
                 <img src="/pictures/navleft.png" alt="pictures" />
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
+                <Link href = '/Pages/microBots' className="font-inter font-medium text-[25.59px] leading-none tracking-normal">1</Link>
+                <Link href = '/Pages/quadPod' className="font-inter font-medium text-[25.59px] leading-none tracking-normal text-[#6D28D9]">2</Link>
+                <Link href = '/Pages/primeAndroid' className="font-inter font-medium text-[25.59px] leading-none tracking-normal">3</Link>
                 <img src="/pictures/navright.png" alt="pictures" />
             </div>
         </div>
