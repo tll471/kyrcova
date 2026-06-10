@@ -22,7 +22,7 @@ export function Navigation() {
           </div>
         </div>
 
-        <Link href="/about">About us</Link>
+        <Link href="/Pages/about">About us</Link>
 
           <div className="relative group py-5">
             <div className="flex flex-row items-center">
@@ -31,7 +31,7 @@ export function Navigation() {
             </div>
 
             <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-120 text-center gap-5">
-              <Link href="/assembly" className="px-3 py-1">Find Assembly Instructions</Link>
+              <Link href="/Pages/assembly" className="px-3 py-1">Find Assembly Instructions</Link>
               <p className="px-3 py-1">Frequently Asked Questions (FAQ)</p>
               <p className="px-3 py-1">Contact Us</p>
               <p className="px-3 py-1">Replacement Parts</p>
