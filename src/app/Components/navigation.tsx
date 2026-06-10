@@ -31,7 +31,7 @@ export function Navigation() {
             </div>
 
             <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-120 text-center gap-5">
-              <p className="px-3 py-1">Find Assembly Instructions</p>
+              <Link href="/assembly" className="px-3 py-1">Find Assembly Instructions</Link>
               <p className="px-3 py-1">Frequently Asked Questions (FAQ)</p>
               <p className="px-3 py-1">Contact Us</p>
               <p className="px-3 py-1">Replacement Parts</p>
