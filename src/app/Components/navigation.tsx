@@ -3,11 +3,11 @@ import Link from "next/link";
 export function Navigation() {
   return (
     <div className="flex flex-row justify-center gap-5 bg-[#FACC15] fixed w-full h-[110px] items-center z-50">
-      <div className="font-normal text-[30px] tracking-normal flex flex-row w-[810px] h-[68px] justify-between items-center mr-150">
+      <div className="font-normal text-[30px] tracking-normal flex flex-row w-[1250px] h-[68px] justify-center items-between mr-40">
 
-        <p>LOGO</p>
-
-        <div className="relative group py-5">
+        <img src="/pictures/Logo.png" alt="logo" className="-ml-5"/>
+        <div className="flex flex-row items-center gap-40 w-900 justify-center">
+          <div className="relative group py-5">
           <div className="flex flex-row items-center">
             <p>Category</p>
             <img src='/pictures/down.png' className="w-[24px] h-[12px]"></img>
@@ -37,7 +37,7 @@ export function Navigation() {
               <p className="px-3 py-1">Replacement Parts</p>
             </div>
           </div>
-        
+        </div>
       </div>
       <input type="text" placeholder="Search..." className="w-[390px] h-[44px] px-4 rounded-[50px] border bg-white text-[18px] -ml-[190px]" />
       <img src="/pictures/Search.png" alt="search" className="-ml-[70px]"/>
