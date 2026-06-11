@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export function Robotfirst() {
+export function RobotSecond() {
     const photos = [
         "/pictures/small1.png",
         "/pictures/small2.png",
@@ -21,7 +21,7 @@ export function Robotfirst() {
 
                 <img src="/pictures/right_light.png" alt="arrow" className="w-[24px] h-[24px]"/>
 
-                <p className="font-normal text-[20px]">Micro Probe Unit</p>
+                <p className="font-normal text-[20px]">Micro Guardian</p>
             </div>
 
             <div className="flex flex-row m-0 m-auto">
@@ -56,11 +56,11 @@ export function Robotfirst() {
                     </div>
 
                     <div className="shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)] w-[530px] h-[565px] rounded-[14.59px] ml-7 flex flex-col items-center justify-center gap-20 mt-auto">
-                        <p className="font-semibold text-[26px] leading-none tracking-normal text-center">Micro Probe Unit</p>
+                        <p className="font-semibold text-[26px] leading-none tracking-normal text-center">Micro Guardian</p>
 
                         <p className="font-medium text-[20px] leading-none tracking-normal text-justify pl-5 pr-5">If you have ever dreamed of creating your own sci-fi machines but felt overwhelmed by traditional robotics kits, the Micro Probe Unit was designed specifically with you in mind. By combining the intuitive, snap-together simplicity of high-quality brick building with the exciting aesthetics of advanced space probes, this kit strips away the frustration of traditional assembly and replaces it with instant, rewarding success.</p>
                     </div>
-                </div> 
+                </div>
             </div>
 
             <div className="flex flex-row w-full justify-center items-center mt-15 gap-40">

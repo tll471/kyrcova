@@ -20,9 +20,9 @@ export function Timersell()
 
     return (
         <div className="w-[1650px] h-[378px] bg-[#0D0519] rounded-[40px] m-0 m-auto mt-10 flex items-center justify-around">
-            <div className="flex flex-row">
+            <div className="flex flex-row items-center">
                 <p className="font-inter font-semibold text-[38px] leading-[100%] tracking-normal text-[#FACC15]">Explore Limited Sets</p>
-                <img src="/pictures/Double Right.png" alt="arrow" />
+                <img src="/pictures/right_robot.png" alt="arrow" className="w-[50px] h-[50px] ml-3"/>
             </div>
 
             <div className="flex flex-row">
