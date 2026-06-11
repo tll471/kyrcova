@@ -1,7 +1,7 @@
 export function AboutText()
 {
     return(
-        <div className="mt-25 flex flex-row w-[1600px] justify-between m-0 m-auto items-center">
+        <div className="mt-25 flex flex-row w-[1600px] justify-center m-0 m-auto items-center">
             <div className="flex flex-col w-[782px] h-[213px] justify-around">
                 <p className="font-inter font-semibold text-[50px] leading-none tracking-normal text-[#0D0519]">About Us</p>
                 <p className="w-[782px]">Discover the exciting world of LEGO robotics. <br></br>Learn programming, engineering, <br></br> and creative problem-solving through hands-on projects and interactive lessons.</p>

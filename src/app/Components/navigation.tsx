@@ -5,7 +5,7 @@ export function Navigation() {
     <div className="flex flex-row justify-center gap-5 bg-[#FACC15] fixed w-full h-[110px] items-center z-50">
       <div className="font-normal text-[30px] tracking-normal flex flex-row w-[1250px] h-[68px] justify-center items-between mr-40">
 
-        <Link href = '/' className="w-full h-full  flex items-center"><img src="/pictures/Logo.png" alt="logo"/></Link>
+        <Link href = '/' className="w-full h-full flex items-center"><img src="/pictures/Logo.png" alt="logo" className="-ml-5.5"/></Link>
         <div className="flex flex-row items-center gap-40 w-900 justify-center">
           <div className="relative group py-5">
           <div className="flex flex-row items-center">
