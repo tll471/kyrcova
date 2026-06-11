@@ -1,11 +1,16 @@
+import { Country } from "./country";
+
 export function Footer()
 {
     return(
-            <div className="bg-[#FACC15] mt-40 w-full h-[316px] flex justify-center items-center">
+            <div className="bg-[#FACC15] mt-20 w-full h-[316px] flex justify-center items-center">
                 <div className="w-[1649px] h-[242px] flex flex-row items-center justify-between">
                 <div className="flex flex-col">
-                    <p>LOGO</p>
-                    <p>CHOOSE</p>
+                    <img src="/pictures/Logo.png" alt="logo" className="ml-0"/>
+                    <div className="-mb-10 mt-10 ml-13">
+                        <Country></Country>
+                    </div>
+                    
                 </div>
 
                 <div className="flex flex-col gap-5">

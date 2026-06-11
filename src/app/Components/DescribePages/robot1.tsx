@@ -9,7 +9,7 @@ export function Robotfirst() {
 
     return (
         <div className="flex flex-col mt-40 justify-center items-center">
-            <div className="flex flex-row h-[24px] -ml-347 mb-15">
+            <div className="flex flex-row h-[24px] -ml-347 mb-15 items-center">
                 <p className="font-normal text-[20px] text-[#6D28D9]">Main page</p>
 
                 <img src="/pictures/right_light.png" alt="arrow" className="w-[24px] h-[24px]"/>

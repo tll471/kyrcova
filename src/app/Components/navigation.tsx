@@ -34,7 +34,7 @@ export function Navigation() {
               <Link href="/Pages/assembly" className="px-3 py-1">Find Assembly Instructions</Link>
               <Link href="/Pages/questions" className="px-3 py-1">Frequently Asked Questions (FAQ)</Link>
               <Link href="/Pages/contact" className="px-3 py-1">Contact Us</Link>
-              <p className="px-3 py-1">Replacement Parts</p>
+              <Link href="/Pages/parts" className="px-3 py-1">Replacement Parts</Link>
             </div>
           </div>
         </div>
