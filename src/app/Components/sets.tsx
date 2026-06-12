@@ -7,7 +7,7 @@ export function Sets()
         {
             image: "/pictures/scr1.png",
             title: "Unmatched Detail & Premium Quality",
-            text: "We don’t do generic. Our sets are engineered for true builders, featuring intricate mechanical joints, custom weapons, and high-quality, perfectly fitting bricks. From transparent cockpits to specialized armor plates, every piece is designed to make your model stand out."
+            text: "We don't do generic. Our sets are engineered for true builders, featuring intricate mechanical joints, custom weapons, and high-quality, perfectly fitting bricks. From transparent cockpits to specialized armor plates, every piece is designed to make your model stand out."
         },
         {
             image: "/pictures/scr2.png",
@@ -35,10 +35,11 @@ export function Sets()
 
     return(
         <div className="w-full flex justify-center mt-15 items-center flex-col">
-            <p className="text-[#6D28D9] font-inter font-bold text-[40px] leading-[100%] tracking-normal m-0">Why our sets?</p>
+            <p className="text-[#6D28D9] font-inter font-bold text-[24px] sm:text-[40px] leading-[100%] tracking-normal m-0 text-center">Why our sets?</p>
 
-            <div className="flex flex-row items-center mt-15">
-                <img src="/pictures/right_black.png" alt="arrow" className="mr-10" onClick={prev} />
+            {/* Desktop: as before */}
+            <div className="hidden sm:flex flex-row items-center mt-15">
+                <img src="/pictures/right_black.png" alt="arrow" className="mr-10 cursor-pointer" onClick={prev} />
 
                 <div className="bg-[#0D0519] w-[1090px] h-[317px] flex flex-row">
                     <img src={item.image} alt="image"/>
@@ -48,7 +49,20 @@ export function Sets()
                     </div>
                 </div>
 
-                <img src="/pictures/left_black.png" alt="arrow" className="ml-10" onClick={next} />
+                <img src="/pictures/left_black.png" alt="arrow" className="ml-10 cursor-pointer" onClick={next} />
+            </div>
+
+            {/* Mobile: simple horizontal slider, no arrows */}
+            <div className="flex sm:hidden flex-row gap-4 mt-10 overflow-x-auto snap-x snap-mandatory w-[90vw] px-4">
+                {setsData.map((s, i) => (
+                    <div key={i} className="bg-[#0D0519] w-[85vw] shrink-0 snap-center flex flex-col rounded-[20px] overflow-hidden">
+                        <img src={s.image} alt="image" className="w-full h-auto"/>
+                        <div className="flex items-center flex-col m-6">
+                            <p className="font-inter font-semibold text-[20px] leading-[100%] tracking-normal text-[#FACC15] mb-4 text-center">{s.title}</p>
+                            <p className="font-inter font-normal text-[16px] leading-[100%] tracking-normal text-justify text-[#FFFFFF]">{s.text}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     )

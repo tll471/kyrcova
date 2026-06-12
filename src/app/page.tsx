@@ -4,7 +4,7 @@ import { Footer } from "./Components/footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navigation></Navigation>
         <Main></Main>
       <Footer></Footer>
