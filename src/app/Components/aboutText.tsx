@@ -1,7 +1,7 @@
 export function AboutText()
 {
     return(
-        <div className="mt-25 flex flex-col w-[1600px] justify-center m-0 m-auto items-center max-w-[390px] sm:max-w-none sm:flex-row">
+        <div className="mt-25 flex flex-col w-[1600px] justify-around m-0 m-auto items-center max-w-[390px] sm:max-w-none sm:flex-row">
             <img className="sm:hidden" src="/pictures/robot_potushno.png" alt="robot" />
             <div className="flex flex-col w-[336px] h-[213px] justify-around items-center sm:items-start sm:w-[782px]">
                 <p className="font-inter font-semibold text-[50px] leading-none tracking-normal text-[#0D0519]">About Us</p>
