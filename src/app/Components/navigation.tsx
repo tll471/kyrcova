@@ -2,29 +2,31 @@ import Link from "next/link";
 
 export function Navigation() {
   return (
-    <div className="flex flex-row justify-center gap-5 bg-[#FACC15] fixed w-full max-w-[440px] sm:max-w-none h-[110px] items-center z-50">
-      <div className="font-normal text-[30px] tracking-normal flex flex-row items-center h-[68px] justify-evenly gap-15 items-between sm:mr-40 sm:w-[1250px]">
+    <div className="flex flex-row justify-between sm:justify-center items-center gap-5 bg-[#FACC15] fixed w-full h-[110px] px-4 sm:px-0 z-50">
+      <div className="font-normal text-[30px] tracking-normal flex flex-row items-center h-[68px] gap-15 sm:mr-40 sm:w-[1250px] justify-between sm:justify-evenly">
 
-        <Link href = '/' className="w-full h-full flex items-center"><img src="/pictures/Logo.png" alt="logo" className="-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/></Link>
+        <Link href='/' className="flex items-center">
+          <img src="/pictures/Logo.png" alt="logo" className="max-sm:w-[235px] max-sm:h-[41px]"/>
+        </Link>
+
         <img src="/pictures/burger.png" alt="burger" className="flex sm:hidden w-[50px] h-[50px]"/>
-        
-        <div className="flex flex-row items-center gap-40 w-900 justify-center hidden sm:flex">
+
+        <div className="flex flex-row items-center gap-40 justify-center hidden sm:flex">
           <div className="relative group py-5">
-          <div className="flex flex-row items-center">
-            <p>Category</p>
-            <img src='/pictures/down.png' className="w-[24px] h-[12px]"></img>
-          </div>
-          
+            <div className="flex flex-row items-center">
+              <p>Category</p>
+              <img src='/pictures/down.png' className="w-[24px] h-[12px]"/>
+            </div>
 
-          <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-40 text-center gap-5">
-            <p className="bg-[#FACC15] px-3 py-1">Мда</p>
-            <p className="bg-[#FACC15] px-3 py-1">Мда</p>
-            <p className="bg-[#FACC15] px-3 py-1">Мда</p>
-            <p className="bg-[#FACC15] px-3 py-1">Мда</p>
+            <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-40 text-center gap-5">
+              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
+              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
+              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
+              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
+            </div>
           </div>
-        </div>
 
-        <Link href="/Pages/about">About us</Link>
+          <Link href="/Pages/about">About us</Link>
 
           <div className="relative group py-5">
             <div className="flex flex-row items-center">
@@ -41,6 +43,7 @@ export function Navigation() {
           </div>
         </div>
       </div>
+
       <input type="text" placeholder="Search..." className="hidden md:flex w-[390px] h-[44px] px-4 rounded-[50px] border bg-white text-[18px] -ml-[190px]" />
       <img src="/pictures/Search.png" alt="search" className="-ml-[70px] hidden md:flex"/>
     </div>
