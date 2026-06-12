@@ -2,7 +2,7 @@ export function HeroImage()
 {
     return(
         <div className="relative w-full">
-            <img src="/pictures/heroimage.png" alt="picture" className="w-full"/>
+            <img src="/pictures/heroimage.png" alt="picture" className="w-full max-w-[440px] md:max-w-none h-[744px] md:h-[970px] overflow-hidden"></img>
             <img src="/pictures/gradient.png" alt="picture" className="absolute w-full h-[970px] -mt-242.5"/>
 
             <p className="font-inter font-semibold text-[50px] leading-[100%] tracking-normal text-white -mt-[820px] ml-[100px] mb-[820px]">Your Bench.<br></br>ㅤYour Bots. <br></br>ㅤㅤYour Rules</p>

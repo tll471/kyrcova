@@ -10,7 +10,7 @@ export function Main()
         <div>
             <HeroImage></HeroImage>
 
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-row sm:justify-center overflow-x-auto snap-x snap-mandatory sm:overflow-visible -mx-[15px] sm:mx-0 px-[15px] sm:px-0">
                 <Card image="/pictures/1_pic.png" title="Micro Bots" text="Easy Build | Age 8+" link="/Pages/microBots"/>
                 <Card image="/pictures/2_pic.png" title="Quad-Pod Hunter" text="Intermediate | Age 12+" link="/Pages/quadPod"/>
                 <Card image="/pictures/3_pic.png" title="Prime Android" text="Expert Build | Age 16+" link="/Pages/primeAndroid"/>
