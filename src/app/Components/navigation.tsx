@@ -4,6 +4,12 @@ import { useState } from "react";
 
 export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [view, setView] = useState("main");
+
+  const closeAll = () => {
+    setMenuOpen(false);
+    setView("main");
+  };
 
   return (
     <div className="flex flex-row justify-center bg-[#FACC15] fixed w-full h-[110px] items-center z-50">
@@ -13,7 +19,15 @@ export function Navigation() {
         <img src="/pictures/Logo.png" alt="logo" className="sm:-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/>
       </Link>
 
-        <img src={menuOpen ? "/pictures/burger2.png" : "/pictures/burger.png"} alt="menu" onClick={() => setMenuOpen(!menuOpen)} className="flex sm:hidden w-[50px] h-[50px] cursor-pointer z-50"/>
+        <img
+          src={menuOpen ? "/pictures/burger2.png" : "/pictures/burger.png"}
+          alt="menu"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            setView("main");
+          }}
+          className="flex sm:hidden w-[50px] h-[50px] cursor-pointer z-50"
+        />
 
         <div className="flex flex-row items-center gap-40 w-900 justify-center hidden sm:flex">
           <div className="relative group py-5">
@@ -50,35 +64,32 @@ export function Navigation() {
       <img src="/pictures/Search.png" alt="search" className="-ml-[70px] hidden md:flex"/>
 
       {menuOpen && (
-        <div className="fixed top-[110px] left-0 w-full h-[calc(100vh-110px)] bg-[#FACC15] flex flex-col items-center gap-10 text-[28px] z-40 pt-10 sm:hidden">
+        <div className="fixed top-[110px] font-orbitron text-[40px] left-0 right-0 bottom-0 bg-[#FACC15] flex flex-col items-center gap-10 text-[28px] z-40 pt-25 sm:hidden">
 
-          <div className="flex flex-col items-center gap-3 w-full">
-            <div className="flex items-center gap-2">
-              <p>Category</p>
-              <img src='/pictures/down.png' className="w-[24px] h-[12px]"/>
-            </div>
-            <div className="flex flex-col text-[20px] text-center gap-3">
-              <p>Мда</p>
-              <p>Мда</p>
-              <p>Мда</p>
-              <p>Мда</p>
-            </div>
-          </div>
+          {view === "main" && (
+            <>
+              <p className="cursor-pointer" onClick={() => setView("category")}>Category</p>
+              <p className="cursor-pointer" onClick={() => setView("help")}>Help</p>
+              <Link href="/Pages/about" onClick={closeAll}>About us</Link>
+            </>
+          )}
 
-          <Link href="/Pages/about" onClick={() => setMenuOpen(false)}>About us</Link>
+          {view === "category" && (
+            <>
+              <Link href="/Pages/microBots" onClick={closeAll}>Micro Bots</Link>
+              <Link href="/Pages/quadPod" onClick={closeAll}>Quad-Pod Hunter</Link>
+              <Link href="/Pages/primeAndroid" onClick={closeAll}>Prime Android</Link>
+            </>
+          )}
 
-          <div className="flex flex-col items-center gap-3 w-full">
-            <div className="flex items-center gap-2">
-              <p>Help</p>
-              <img src="/pictures/down.png" className="w-[24px] h-[12px]" />
-            </div>
-            <div className="flex flex-col text-[20px] text-center gap-3">
-              <Link href="/Pages/assembly" onClick={() => setMenuOpen(false)}>Find Assembly Instructions</Link>
-              <Link href="/Pages/questions" onClick={() => setMenuOpen(false)}>FAQ</Link>
-              <Link href="/Pages/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
-              <Link href="/Pages/parts" onClick={() => setMenuOpen(false)}>Replacement Parts</Link>
-            </div>
-          </div>
+          {view === "help" && (
+            <>
+              <Link href="/Pages/assembly" onClick={closeAll} className="text-center pl-5 pr-5">Find Assembly Instructions</Link>
+              <Link href="/Pages/questions" onClick={closeAll} className="text-center pl-5 pr-5">FAQ</Link>
+              <Link href="/Pages/contact" onClick={closeAll} className="text-center pl-5 pr-5">Contact Us</Link>
+              <Link href="/Pages/parts" onClick={closeAll} className="text-center pl-5 pr-5">Replacement Parts</Link>
+            </>
+          )}
         </div>
       )}
     </div>
