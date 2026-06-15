@@ -8,7 +8,7 @@ import { WhereWe } from "@/app/Components/wherewe";
 export default function Contact()
 {
     return(
-        <div>
+        <div className="overflow-x-hidden">
             <Navigation></Navigation>
             <WeAre></WeAre>
             <WhereWe></WhereWe>
