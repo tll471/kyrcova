@@ -2,7 +2,7 @@ export function OurRobots()
 {
     return(
         <div className="flex flex-col items-center w-full mt-20">
-            <p className="font-inter font-semibold text-[50px] leading-none tracking-normal mb-10">Our Robots</p>
+            <p className="font-orbitron font-semibold text-[50px] leading-none tracking-normal mb-10">Our Robots</p>
 
             <div className="sm:hidden flex flex-row overflow-x-auto gap-6 w-full px-6 snap-x snap-mandatory scrollbar-hide mb-10">
                 <img src="/pictures/robot1.png" alt="robot" className="snap-center min-w-[280px]" />

@@ -26,7 +26,7 @@ export function Choose()
     return (
         <div className="w-full flex justify-center mt-15 items-center flex-col px-4">
 
-            <p className="text-[#6D28D9] font-inter font-bold text-[24px] sm:text-[40px] leading-[100%] tracking-normal text-center">For example you can build:</p>
+            <p className="text-[#6D28D9] font-orbitron font-bold text-[24px] sm:text-[40px] leading-[100%] tracking-normal text-center">For example you can build:</p>
 
             <div className="items-center flex justify-center flex-col mt-10 w-full">
                 <img src={mainImage} alt="robot" className="w-[200px] sm:w-[377px] h-[400px] sm:h-[632px]"/>

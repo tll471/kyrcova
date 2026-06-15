@@ -3,7 +3,7 @@ export function WeAre()
     return(
         <div className="flex flex-col mt-40 justify-center items-center gap-10 sm:flex-row">
             <div className="flex flex-col px-4 sm:px-0">
-                <p className="font-inter font-semibold text-[50px] leading-none tracking-normal">Contact Us</p>
+                <p className="font-orbitron font-semibold text-[50px] leading-none tracking-normal">Contact Us</p>
                 <p className="font-inter font-semibold text-[20px] leading-none tracking-normal mt-5 mb-5">Contact our team for support, orders, and inquiries</p>
                 <div className="bg-[#FACC15] w-[140px] h-[40px] font-inter text-xl font-semibold leading-none rounded-[10px] flex items-center justify-center">Learn more</div>
             </div>

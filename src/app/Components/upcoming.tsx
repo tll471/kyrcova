@@ -5,7 +5,7 @@ export function Upcoming() {
         <div className="w-[90vw] sm:w-[1650px] max-w-[1650px] h-auto sm:h-[378px] rounded-[40px] bg-[#0D0519] m-auto mt-15 flex flex-col justify-between items-center py-8 sm:py-0 gap-6 sm:gap-0 sm:flex-row sm:justify-around">
 
             <div className="flex flex-col items-center order-first sm:order-none sm:flex-row">
-                <Link href='/Pages/limitedsell'className="font-inter font-semibold text-[38px] sm:text-[38px] text-[#FACC15] text-center">
+                <Link href='/Pages/limitedsell'className="font-orbitron font-semibold text-[38px] sm:text-[38px] text-[#FACC15] text-center">
                     Explore Limited Sets
                 </Link>
                 <img

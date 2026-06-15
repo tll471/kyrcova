@@ -2,7 +2,7 @@ export function WeDo()
 {
     return(
         <div className="flex flex-col items-center w-full mt-10">
-            <p className="font-inter font-semibold text-[50px] leading-none tracking-normal mb-10">What we do</p>
+            <p className="font-orbitron font-semibold text-[50px] leading-none tracking-normal mb-10">What we do</p>
             <div className="sm:hidden flex flex-row items-center overflow-x-auto gap-8 w-full px-6 snap-x snap-mandatory scrollbar-hide">
                 <div className="flex flex-col flex justify-center items-center h-[270px] min-w-[280px] snap-center">
                     <img src="/pictures/first.png" alt="first" className="w-[130px] h-[130px] transition-transform duration-300 hover:scale-105"/>

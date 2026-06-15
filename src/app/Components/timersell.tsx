@@ -21,7 +21,7 @@ export function Timersell()
     return (
         <div className="w-[90vw] sm:w-[1650px] max-w-[1650px] h-auto sm:h-[378px] bg-[#0D0519] rounded-[40px] m-auto mt-10 flex flex-col sm:flex-row items-center justify-around py-8 sm:py-0 gap-6 sm:gap-0">
             <div className="flex flex-col items-center sm:flex-row">
-                <p className="font-inter font-semibold text-[38px] sm:text-[38px] leading-[100%] tracking-normal text-[#FACC15] text-center mb-5 sm:mb-0">Explore Limited Sets</p>
+                <p className="font-orbitron font-semibold text-[38px] sm:text-[38px] leading-[100%] tracking-normal text-[#FACC15] text-center mb-5 sm:mb-0">Explore Limited Sets</p>
                 <img src="/pictures/right_robot.png" alt="arrow" className="w-[35px] h-[35px] sm:w-[50px] sm:h-[50px] ml-3 transform rotate-90 sm:rotate-0"/>
             </div>
 

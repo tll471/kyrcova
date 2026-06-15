@@ -35,16 +35,15 @@ export function Sets()
 
     return(
         <div className="w-full flex justify-center mt-15 items-center flex-col">
-            <p className="text-[#6D28D9] font-inter font-bold text-[24px] sm:text-[40px] leading-[100%] tracking-normal m-0 text-center">Why our sets?</p>
+            <p className="text-[#6D28D9] font-orbitron font-bold text-[24px] sm:text-[40px] leading-[100%] tracking-normal m-0 text-center">Why our sets?</p>
 
-            {/* Desktop: as before */}
             <div className="hidden sm:flex flex-row items-center mt-15">
                 <img src="/pictures/right_black.png" alt="arrow" className="mr-10 cursor-pointer" onClick={prev} />
 
                 <div className="bg-[#0D0519] w-[1090px] h-[317px] flex flex-row">
                     <img src={item.image} alt="image"/>
                     <div className="flex items-center flex-col m-10">
-                        <p className="font-inter font-semibold text-[28px] leading-[100%] tracking-normal text-[#FACC15] mb-10">{item.title}</p>
+                        <p className="font-orbitron font-semibold text-[28px] leading-[100%] tracking-normal text-[#FACC15] mb-10">{item.title}</p>
                         <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal text-justify text-[#FFFFFF]">{item.text}</p>
                     </div>
                 </div>
@@ -52,7 +51,6 @@ export function Sets()
                 <img src="/pictures/left_black.png" alt="arrow" className="ml-10 cursor-pointer" onClick={next} />
             </div>
 
-            {/* Mobile: simple horizontal slider, no arrows */}
             <div className="flex sm:hidden flex-row gap-4 mt-10 overflow-x-auto snap-x snap-mandatory w-[90vw] px-4">
                 {setsData.map((s, i) => (
                     <div key={i} className="bg-[#0D0519] w-[85vw] shrink-0 snap-center flex flex-col rounded-[20px] overflow-hidden">
