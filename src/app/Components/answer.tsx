@@ -28,19 +28,19 @@ export function Answer() {
     ];
 
     return (
-        <div className="w-full flex flex-col items-center mt-10">
+        <div className="w-full flex flex-col items-center mt-10 px-4">
 
             {items.map((item, index) => (
-                <div key={index} className="m-5">
-                    <div onClick={() => toggle(index)} className="w-[1373px] h-[148px] bg-[#FACC15] flex items-center justify-between px-10 cursor-pointer">
-                        <p className="font-outfit font-semibold text-[24px]">{item.title}</p>
+                <div key={index} className="m-3 sm:m-5 w-full sm:w-auto">
+                    <div onClick={() => toggle(index)} className="w-full sm:w-[1373px] h-auto sm:h-[148px] bg-[#FACC15] flex items-center justify-between px-5 sm:px-10 py-5 sm:py-0 cursor-pointer gap-4">
+                        <p className="font-outfit font-semibold text-[16px] sm:text-[24px]">{item.title}</p>
 
-                        <img src="/pictures/w_arrow.png" alt="arrow" className={`transition-transform duration-300 ${ openIndex === index ? "rotate-90" : "rotate-0" }`} />
+                        <img src="/pictures/w_arrow.png" alt="arrow" className={`shrink-0 w-[20px] sm:w-auto transition-transform duration-300 ${ openIndex === index ? "rotate-90" : "rotate-0" }`} />
                     </div>
 
-                    <div className={`overflow-hidden transition-all duration-300 ${ openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
-                        <div className="border-[3px] border-[#F2BB00] p-6 bg-white">
-                            <p className="text-lg">{item.text}</p>
+                    <div className={`overflow-hidden transition-all duration-300 ${ openIndex === index ? "max-h-60 sm:max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
+                        <div className="border-[3px] border-[#F2BB00] p-4 sm:p-6 bg-white">
+                            <p className="text-base sm:text-lg">{item.text}</p>
                         </div>
                     </div>
                 </div>

@@ -6,12 +6,12 @@ export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex flex-row justify-center gap-5 bg-[#FACC15] fixed w-full max-w-[440px] sm:max-w-none h-[110px] items-center z-50">
-      <div className="font-normal text-[30px] tracking-normal flex flex-row items-center h-[68px] justify-evenly gap-15 items-between sm:mr-40 sm:w-[1250px]">
+    <div className="flex flex-row justify-center bg-[#FACC15] fixed w-full h-[110px] items-center z-50">
+      <div className="font-normal text-[30px] tracking-normal flex flex-row items-center h-[68px] w-full justify-between px-5 sm:justify-evenly sm:gap-15 sm:px-0 sm:mr-40 sm:w-[1250px]">
 
-        <Link href='/' className="w-full h-full flex items-center">
-          <img src="/pictures/Logo.png" alt="logo" className="-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/>
-        </Link>
+      <Link href='/' className="w-full h-full flex items-center sm:-ml-5 sm:mr-8">
+        <img src="/pictures/Logo.png" alt="logo" className="sm:-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/>
+      </Link>
 
         <img src={menuOpen ? "/pictures/burger2.png" : "/pictures/burger.png"} alt="menu" onClick={() => setMenuOpen(!menuOpen)} className="flex sm:hidden w-[50px] h-[50px] cursor-pointer z-50"/>
 
