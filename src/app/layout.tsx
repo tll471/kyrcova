@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Orbitron } from "next/font/google"; // 1. Добавьте Orbitron сюда
+import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
+import { PageLoader } from "./Components/loading";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,7 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 2. Настройте шрифт
 const orbitron = Orbitron({
   variable: "--font-orbitron",
   subsets: ["latin"],
@@ -31,10 +31,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // 3. Добавьте ${orbitron.variable} в className
       className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <PageLoader/>
+        {children}
+      </body>
     </html>
   );
 }

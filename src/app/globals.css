@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -29,4 +30,8 @@ body {
 
 @theme {
   --font-orbitron: "Orbitron", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

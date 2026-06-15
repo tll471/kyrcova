@@ -20,7 +20,7 @@ export function PageLoader() {
     if (!visible) return null
 
     return (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black gap-10">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-white gap-10">
             <img src="/pictures/lod1.svg" alt="pic" className={`transition-opacity duration-300 ${step >= 1 ? 'opacity-100' : 'opacity-0'}`}/>
             <img src="/pictures/lod2.svg" alt="pic" className={`transition-opacity duration-300 ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}/>
             <img src="/pictures/lod3.svg" alt="pic" className={`transition-opacity duration-300 ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}/>

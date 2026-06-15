@@ -19,42 +19,35 @@ export function Navigation() {
         <img src="/pictures/Logo.png" alt="logo" className="sm:-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/>
       </Link>
 
-        <img
-          src={menuOpen ? "/pictures/burger2.png" : "/pictures/burger.png"}
-          alt="menu"
-          onClick={() => {
-            setMenuOpen(!menuOpen);
-            setView("main");
-          }}
-          className="flex sm:hidden w-[50px] h-[50px] cursor-pointer z-50"
-        />
+        <img src={menuOpen ? "/pictures/burger2.png" : "/pictures/burger.png"} alt="menu"
+          onClick={() => {setMenuOpen(!menuOpen); setView("main");}}
+          className="flex sm:hidden w-[50px] h-[50px] cursor-pointer z-50"/>
 
-        <div className="flex flex-row items-center gap-40 w-900 justify-center hidden sm:flex">
+        <div className="font-orbitron flex flex-row items-center gap-40 w-900 justify-center hidden sm:flex">
           <div className="relative group py-5">
             <div className="flex flex-row items-center">
               <p>Category</p>
               <img src='/pictures/down.png' className="w-[24px] h-[12px]"/>
             </div>
-            <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-40 text-center gap-5">
-              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
-              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
-              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
-              <p className="bg-[#FACC15] px-3 py-1">Мда</p>
+            <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] sm:w[280px] text-center gap-5">
+              <Link href="/Pages/microBots" className="px-3 py-1">Micro bots</Link>
+              <Link href="/Pages/quadPod" className="px-3 py-1">Quad-Pod Hunter</Link>
+              <Link href="/Pages/primeAndroid" className="px-3 py-1">Prime Android</Link>
             </div>
           </div>
 
-          <Link href="/Pages/about">About us</Link>
+          <Link href="/Pages/about" className="font-orbitron">About us</Link>
 
           <div className="relative group py-5">
             <div className="flex flex-row items-center">
-              <p>Help</p>
+              <p className="font-orbitron">Help</p>
               <img src="/pictures/down.png" className="w-[24px] h-[12px]" />
             </div>
-            <div className="absolute left-0 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-120 text-center gap-5">
-              <Link href="/Pages/assembly" className="px-3 py-1">Find Assembly Instructions</Link>
-              <Link href="/Pages/questions" className="px-3 py-1">Frequently Asked Questions (FAQ)</Link>
-              <Link href="/Pages/contact" className="px-3 py-1">Contact Us</Link>
-              <Link href="/Pages/parts" className="px-3 py-1">Replacement Parts</Link>
+            <div className="absolute -ml-45 top-full hidden group-hover:flex flex-col shadow-lg rounded-md p-3 text-[20px] bg-[#FACC15] w-120 text-center gap-5">
+              <Link href="/Pages/assembly" className="px-3 py-1 font-orbitron">Find Assembly Instructions</Link>
+              <Link href="/Pages/questions" className="px-3 py-1 font-orbitron">Frequently Asked Questions (FAQ)</Link>
+              <Link href="/Pages/contact" className="px-3 py-1 font-orbitron">Contact Us</Link>
+              <Link href="/Pages/parts" className="px-3 py-1 font-orbitron">Replacement Parts</Link>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ export function Footer()
                 <div className="w-[90vw] sm:w-[1649px] sm:h-[242px] flex flex-col sm:flex-row items-center justify-between gap-10 sm:gap-0">
 
                 <div className="flex flex-col items-center sm:items-start">
-                    <img src="/pictures/Logo.png" alt="logo" className="ml-0 w-[200px] sm:w-auto"/>
+                    <img src="/pictures/Logo.png" alt="logo" className="ml-0 w-[250px] sm:w-auto"/>
                     <div className="-mb-10 mt-10 ml-13 hidden sm:block">
                         <Country></Country>
                     </div>
@@ -29,7 +29,7 @@ export function Footer()
                     <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Replacement Parts</p>
                 </div>
 
-                <div className="flex flex-row gap-3 w-[191.08316040039062px] h-[61.985267639160156px] hidden sm:flex">
+                <div className="flex flex-row gap-3 w-[132px] h-[42px] flex justify-center sm:flex">
                     <img src="/pictures/l1.png" alt="links" />
                     <img src="/pictures/l2.png" alt="links" />
                     <img src="/pictures/l3.png" alt="links" className="-p-1"/>
