@@ -1,7 +1,7 @@
 export function HeroImage()
 {
     return(
-        <div className="relative w-full">
+        <div className="relative w-full mt-20">
             <img src="/pictures/heroimage.png" alt="picture" className="w-full hidden sm:flex"></img>
             <img src="/pictures/short.png" alt="picture" className="w-full flex sm:hidden mt-20"></img>
             <img src="/pictures/gradient.png" alt="picture" className="absolute w-full h-[970px] -mt-242.5 flex sm:hidden"/>
