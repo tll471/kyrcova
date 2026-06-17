@@ -11,15 +11,15 @@ export function Answer() {
     const items = [
         {
             title: "What is Robrick and who is it for?",
-            text: "Robrick is an interactive platform where you can learn LEGO robotics, programming, and engineering through fun, hands-on projects."
+            text: "Robrick is an interactive platform where you can learn RobBrick robotics, programming, and engineering through fun, hands-on projects."
         },
         {
             title: "Do I need prior coding experience to start?",
             text: "Not at all! We offer step-by-step lessons that guide you from absolute beginner to advanced robot builder."
         },
         {
-            title: "What LEGO Robots sets do I need for the courses?",
-            text: "Most of our projects use LEGO MINDSTORMS or LEGO Spike Prime sets. Check the specific course requirements before starting."
+            title: "What RobBrick Robots sets do I need for the courses?",
+            text: "Most of our projects use RobBrick MINDSTORMS or RobBrick Spike Prime sets. Check the specific course requirements before starting."
         },
         {
             title: "What makes SLAM different from standard language courses or learning apps?",

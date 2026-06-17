@@ -1,8 +1,10 @@
+import Link from "next/link"
+
 export function Micro2() {
     return (
         <div className="flex flex-col mt-35 justify-center items-center px-4 sm:px-0">
             <div className="flex flex-row h-[24px] sm:-ml-345 mb-0 items-center">
-                <p className="font-normal text-[20px] text-[#6D28D9]">Main page</p>
+                <Link href="/" className="font-normal text-[20px] text-[#6D28D9]">Main page</Link>
                 <img src="/pictures/right_light.png" alt="arrow" className="w-[24px] h-[24px]"/>
                 <p className="font-normal text-[20px]">Quad-Pod Hunter</p>
             </div>

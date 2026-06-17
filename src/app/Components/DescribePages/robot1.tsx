@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link"
 import { useState } from "react";
 
 export function Robotfirst() {
@@ -17,7 +18,7 @@ export function Robotfirst() {
     return (
         <div className="flex flex-col mt-35 sm:mt-40 justify-center items-center px-4 sm:px-0">
             <div className="flex flex-row h-[24px] sm:-ml-347 mb-5 justify-center sm:mb-10 items-center w-full sm:w-auto">
-                <p className="font-normal text-[16px] sm:text-[20px] text-[#6D28D9]">Main page</p>
+                <Link href="/" className="font-normal text-[16px] sm:text-[20px] text-[#6D28D9]">Main page</Link>
 
                 <img src="/pictures/right_light.png" alt="arrow" className="w-[24px] h-[24px]"/>
 
@@ -59,7 +60,7 @@ export function Robotfirst() {
                 <div className="flex flex-col w-full sm:w-auto mt-8 sm:mt-0">
                     <div className="ml-auto mr-0 sm:mr-5 bg-[#FACC15] flex items-center justify-center w-[179px] h-[25.436840057373047px] font-medium text-[17.93px] leading-none tracking-normal text-center">Exclusive products</div>
 
-                    <div className="ml-0 sm:ml-7 mt-5 flex flex-row">
+                    <div className="ml-0 sm:ml-7 mt-5 flex flex-row gap-5">
                         <p className="font-inter font-medium text-[22px] leading-none tracking-normal underline">Micro bots™</p>
                         <p className="text-[#726F6F] font-medium text-[22px] leading-none tracking-normal">#10230</p>
                     </div>
@@ -91,7 +92,7 @@ export function Robotfirst() {
                 <div className="flex flex-row justify-center sm:justify-center items-center gap-10 sm:gap-40 w-full sm:w-auto px-0 sm:px-0 mt-5 -mb-10 sm:mt-0 sm:mb-0">
                     <div className="flex flex-row items-center">
                         <img src="/pictures/list.png" alt="list" className="w-[24px] h-[24px] sm:w-[30.195791972255066px] sm:h-[30.99391134623754px]"/>
-                        <p className="font-semibold text-[15px] sm:text-[26px] leading-none tracking-normal text-center underline underline-offset-2">Get the instruction</p>
+                        <Link href="/Pages/assembly" className="font-semibold text-[15px] sm:text-[26px] leading-none tracking-normal text-center underline underline-offset-2">Get the instruction</Link>
                     </div>
                     <div className="flex flex-row items-center gap-0 sm:gap-0">
                         <p className="font-semibold text-[14px] sm:text-[20px] leading-none tracking-normal mr-3">Warning!<br></br>Choking hazard.<br></br>Small parts.</p>
@@ -142,7 +143,7 @@ export function Robotfirst() {
                                 <p className="text-[#6D28D9] font-inter font-medium text-[20px] leading-none">BrickMaster_99</p>
                             </div>
 
-                            <p className="font-inter font-normal text-[20px] leading-snug text-black -mt-3 w-full sm:w-[545px] text-justify">"I bought the Micro Probe Unit for my younger brother, but honestly, I ended up spending the whole evening playing around with it myself. The plastic quality is top-notch, and it snaps perfectly with the rest of my LEGO collection. That retro green screen is incredibly charming. Highly recommend!"</p>
+                            <p className="font-inter font-normal text-[20px] leading-snug text-black -mt-3 w-full sm:w-[545px] text-justify">"I bought the Micro Probe Unit for my younger brother, but honestly, I ended up spending the whole evening playing around with it myself. The plastic quality is top-notch, and it snaps perfectly with the rest of my RobBrick collection. That retro green screen is incredibly charming. Highly recommend!"</p>
                         </div>
 
                         <div className="w-full sm:w-[582px] h-auto sm:h-[238px] bg-white shadow-[0_0_8px_0_rgba(0,0,0,0.5)] flex flex-col p-5 gap-4">

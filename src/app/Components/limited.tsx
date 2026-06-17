@@ -1,9 +1,11 @@
+import Link from "next/link"
+
 export function Limited()
 {
     return(
         <div className="flex flex-col mt-35 sm:mt-40 justify-center items-center m-auto w-full sm:w-[1650px] px-4">
             <div className="flex flex-row h-[24px] mb-5 sm:mb-15 items-center self-start m-auto sm:m-0 sm:self-center sm:-ml-347">
-                <p className="font-normal text-[20px] text-[#6D28D9] ml-1">Main page</p>
+                <Link href="/" className="font-normal text-[20px] text-[#6D28D9] ml-1">Main page</Link>
                 <img src="/pictures/right_light.png" alt="arrow" className="w-[24px] h-[24px]"/>
                 <p className="font-normal text-[20px]">Micro Probe Unit</p>
             </div>

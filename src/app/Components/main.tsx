@@ -11,9 +11,9 @@ export function Main()
             <HeroImage></HeroImage>
 
             <div className="flex flex-row sm:justify-center overflow-x-auto snap-x snap-mandatory sm:overflow-visible -mx-[15px] sm:mx-0 px-[15px] sm:px-0">
-                <Card image="/pictures/1_pic.png" title="Micro Bots" text="Easy Build | Age 8+" link="/Pages/microBots"/>
-                <Card image="/pictures/2_pic.png" title="Quad-Pod Hunter" text="Intermediate | Age 12+" link="/Pages/quadPod"/>
-                <Card image="/pictures/3_pic.png" title="Prime Android" text="Expert Build | Age 16+" link="/Pages/primeAndroid"/>
+                <Card image="/pictures/main1.svg" title="Micro Bots" text="Easy Build | Age 8+" link="/Pages/microBots"/>
+                <Card image="/pictures/main2.svg" title="Quad-Pod Hunter" text="Intermediate | Age 12+" link="/Pages/quadPod"/>
+                <Card image="/pictures/main3.svg" title="Prime Android" text="Expert Build | Age 16+" link="/Pages/primeAndroid"/>
             </div>
             
             <Timersell></Timersell>

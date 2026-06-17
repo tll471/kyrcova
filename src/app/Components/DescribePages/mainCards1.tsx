@@ -29,7 +29,7 @@ export function MainCards1() {
         <div className="w-[90vw] sm:w-[1650px] flex flex-col justify-between mx-auto mt-20">
 
             <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-0 items-center">
-                <p className="text-center sm:text-left -mt-7 font-bold sm:mt-0 text-base leading-none tracking-normal font-inter">Products displayed: {cards.length}</p>
+                <p className="text-center sm:text-left -mt-7 font-bold sm:mt-0 text-base leading-none tracking-normal font-inter text-[23px]">Products displayed: {cards.length}</p>
 
                 <div className={`${nearBottom ? 'hidden sm:flex' : 'fixed'} bottom-5 left-1/2 -translate-x-1/2 sm:static sm:translate-x-0 border-[2px] rounded-[23px] flex flex-row w-[390px] h-[46px] justify-around bg-white z-1 shadow-md sm:shadow-none`}>
                     <div className="flex flex-row items-center justify-center w-full">
