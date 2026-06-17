@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 import { Country } from "./country";
 
 export function Footer()
@@ -15,17 +17,17 @@ export function Footer()
 
                 <div className="hidden sm:flex flex-col gap-5">
                     <p className="font-orbitron font-bold text-[30px] leading-[100%] tracking-normal">Help</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Find Assembly Instructions</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Frequently Asked Questions (FAQ)</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Contact Us</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Replacement Parts</p>
+                    <Link href="/Pages/assembly" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Find Assembly Instructions</Link>
+                    <Link href="/Pages/questions" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Frequently Asked Questions (FAQ)</Link>
+                    <Link href="/Pages/contact" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Contact Us</Link>
+                    <Link href="/Pages/parts" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Replacement Parts</Link>
                 </div>
 
                 <div className="hidden sm:flex flex-col gap-5">
                     <p className="font-orbitron font-bold text-[30px] leading-[100%] tracking-normal">Category</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Micro bots</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Quad-Pod Hunter</p>
-                    <p className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Prime Android</p>
+                    <Link href="/Pages/microBots" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Micro bots</Link>
+                    <Link href="/Pages/quadPod" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Quad-Pod Hunter</Link>
+                    <Link href="/Pages/primeAndroid" className="font-inter font-normal text-[26px] leading-[100%] tracking-normal">Prime Android</Link>
                 </div>
 
                 <div className="flex flex-row gap-3 w-[132px] h-[42px] flex justify-center sm:flex">

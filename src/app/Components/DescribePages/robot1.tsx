@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export function Robotfirst() {
     const photos = [
-        "/pictures/small1.png",
+        "/pictures/small1.svg",
         "/pictures/small2.png",
         "/pictures/small3.png",
         "/pictures/small4.png",
@@ -76,7 +76,7 @@ export function Robotfirst() {
 
                 <div className="flex flex-row justify-between sm:justify-center items-center gap-2 sm:gap-40 w-full sm:w-auto">
                     <div className="flex justify-center w-[200px] sm:w-[390px] h-[60px] sm:h-[120px] bg-[#0D0519] font-medium text-[16px] sm:text-[38px] leading-none tracking-normal text-[#FFFFFF] items-center">Micro bots™</div>
-                    <div className="flex flex-row justify-center gap-20 sm:gap-40">
+                    <div className="flex flex-row justify-center gap-10 sm:gap-40">
                         <div className="flex flex-col items-center gap-3 m">
                             <p className="font-semibold text-[28px] sm:text-[40px] leading-none tracking-normal text-center">10+</p>
                             <p className="font-normal text-[16px] sm:text-[24px] leading-none tracking-normal">Age</p>
@@ -88,12 +88,12 @@ export function Robotfirst() {
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-center sm:justify-center items-center gap-16 sm:gap-40 w-full sm:w-auto px-0 sm:px-0">
+                <div className="flex flex-row justify-center sm:justify-center items-center gap-10 sm:gap-40 w-full sm:w-auto px-0 sm:px-0 mt-5 -mb-10 sm:mt-0 sm:mb-0">
                     <div className="flex flex-row items-center">
                         <img src="/pictures/list.png" alt="list" className="w-[24px] h-[24px] sm:w-[30.195791972255066px] sm:h-[30.99391134623754px]"/>
-                        <p className="font-semibold text-[18px] sm:text-[26px] leading-none tracking-normal text-center underline underline-offset-2">Get the instruction</p>
+                        <p className="font-semibold text-[15px] sm:text-[26px] leading-none tracking-normal text-center underline underline-offset-2">Get the instruction</p>
                     </div>
-                    <div className="flex flex-row items-center gap-5 sm:gap-0">
+                    <div className="flex flex-row items-center gap-0 sm:gap-0">
                         <p className="font-semibold text-[14px] sm:text-[20px] leading-none tracking-normal mr-3">Warning!<br></br>Choking hazard.<br></br>Small parts.</p>
                         <img src="/pictures/baby.png" alt="baby" className="w-[40px] h-[40px] sm:w-[56px] sm:h-[56px]"/>
                     </div>

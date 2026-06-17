@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 
 export function MainCards2() {
     const cards = [
-        { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250, links: '/Pages/robot1' },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
-        { type: "main", title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250, links: '/Pages/robot1' },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
-        { type: "default", title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot2' },
+        { title: "Micro Probe Unit", img: "/pictures/set1.png", bricks: 250, links: '/Pages/robot1', age: "10+"},
+        { title: "Micro Guardian", img: "/pictures/set2.png", bricks: 245, links: '/Pages/robot1', age: "10+"},
+        { title: "Nano Sentinel", img: "/pictures/set3.png", bricks: 248, links: '/Pages/robot1', age: "12+"},
+        { title: "Sentinel Defense", img: "/pictures/set4.png", bricks: 250, links: '/Pages/robot1', age: "10+"},
+        { title: "Aque Sentinel", img: "/pictures/set5.png", bricks: 275, links: '/Pages/robot1', age: "12+"},
+        { title: "Mini Sentinel", img: "/pictures/set6.png", bricks: 250, links: '/Pages/robot1', age: "10+"},
+        { title: "Mechanica Sentinel", img: "/pictures/set7.png", bricks: 120, links: '/Pages/robot1', age: "8+"},
+        { title: "Pyro Sentinel", img: "/pictures/set8.png", bricks: 310, links: '/Pages/robot1', age: "12+"},
     ];
 
     const [nearBottom, setNearBottom] = useState(false);
@@ -30,7 +30,7 @@ export function MainCards2() {
             <div className="flex flex-col sm:flex-row w-full justify-between gap-4 sm:gap-0 items-center">
                 <p className="text-center sm:text-left -mt-7 font-bold sm:mt-0 text-base leading-none tracking-normal font-inter">Products displayed: {cards.length}</p>
 
-                <div className={`${nearBottom ? 'hidden sm:flex' : 'fixed'} bottom-5 left-1/2 -translate-x-1/2 sm:static sm:translate-x-0 border-[2px] rounded-[23px] flex flex-row w-[390px] h-[46px] justify-around bg-white z-50 shadow-md sm:shadow-none`}>
+                <div className={`${nearBottom ? 'hidden sm:flex' : 'fixed'} bottom-5 left-1/2 -translate-x-1/2 sm:static sm:translate-x-0 border-[2px] rounded-[23px] flex flex-row w-[390px] h-[46px] justify-around bg-white z-1 shadow-md sm:shadow-none`}>
                     <div className="flex flex-row items-center justify-center w-full">
                         <p className="text-[23px]">Filters</p>
                         <img src="/pictures/f1.png" alt="filter" className="w-[22px] h-[22px]" />
@@ -58,7 +58,7 @@ export function MainCards2() {
                             <p className="text-black font-semibold text-[26.35px] leading-none text-center font-inter">{card.title}</p>
                             <div className="flex flex-row items-center justify-center gap-3 mt-3">
                                 <img src="/pictures/desc1.png" alt="desc" />
-                                <p>10+</p>
+                                <p>{card.age}</p>
                                 <img src="/pictures/desc2.png" alt="desc" />
                                 <p>{card.bricks}</p>
                             </div>

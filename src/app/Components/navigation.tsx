@@ -16,7 +16,7 @@ export function Navigation() {
       <div className="font-normal text-[30px] tracking-normal flex flex-row items-center h-[68px] w-full justify-between px-5 sm:justify-evenly sm:gap-15 sm:px-0 sm:mr-40 sm:w-[1250px]">
 
       <Link href='/' className="w-full h-full flex items-center sm:-ml-5 sm:mr-8">
-        <img src="/pictures/Logo.png" alt="logo" className="sm:-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/>
+        <img src="/pictures/Logo.svg" alt="logo" className="sm:-ml-5.5 max-sm:w-[235px] max-sm:h-[41px]"/>
       </Link>
 
         <img src={menuOpen ? "/pictures/burger2.png" : "/pictures/burger.png"} alt="menu"
